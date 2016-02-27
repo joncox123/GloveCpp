@@ -9,7 +9,7 @@ This implementation takes a modern, C++ approach. In particular, it leverages th
 While this approach may or may not be faster than an efficient, multi-threaded implementation in C, it is nevertheless simpler to read, understand and modify. A vectorized implementation is also potentially capable of greater performance with a suitable matrix library, by exploiting modern CPU architectures.
 
 ### Feature Requests or Bugs
-If you have a feature request, or if you find a bug, you can contact the author at either: jacox@sandia.gov or joncox@alum.mit.edu.
+If you have a feature request, or if you find a bug, you can contact the author at joncox (at) alum (dot) mit (dot) edu.
  
 ### Compiling the Source Code
 To compile GloVe, you will need the following libraries and compiler installed on your system:
