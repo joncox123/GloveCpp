@@ -1,37 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
     <title>GloveCpp by joncox123</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
-
   <body>
-    <div id="container">
-      <div class="inner">
 
-        <header>
-          <h1>GloveCpp</h1>
-          <h2>Modern C++ Implementation of the GloVe Natural Language Processing algorithm</h2>
-        </header>
+      <header>
+        <h1>GloveCpp</h1>
+        <p>Modern C++ Implementation of the GloVe Natural Language Processing algorithm</p>
+      </header>
 
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/joncox123/GloveCpp/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/joncox123/GloveCpp/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/joncox123/GloveCpp" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
+      <div id="banner">
+        <span id="logo"></span>
 
-        <hr>
+        <a href="https://github.com/joncox123/GloveCpp" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/joncox123/GloveCpp/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/joncox123/GloveCpp/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
 
-        <section id="main_content">
-          <h3>
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h3>
 <a id="glovecpp" class="anchor" href="#glovecpp" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GloveCpp</h3>
 
 <h3>
@@ -47,34 +55,38 @@ While this approach may or may not be faster than an efficient, multi-threaded i
 <h3>
 <a id="feature-requests-or-bugs" class="anchor" href="#feature-requests-or-bugs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Feature Requests or Bugs</h3>
 
-<p>If you have a feature request, or if you find a bug, you can contact the author at either: <a href="mailto:jacox@sandia.gov">jacox@sandia.gov</a> or <a href="mailto:joncox@alum.mit.edu">joncox@alum.mit.edu</a>.</p>
+<p>If you have a feature request, or if you find a bug, you can contact the author at joncox (at) alum (dot) mit (dot) edu.</p>
 
 <h3>
 <a id="compiling-the-source-code" class="anchor" href="#compiling-the-source-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Compiling the Source Code</h3>
 
-<p>To compile GloVe, you will need the following libraries and compiler installed on your system:
--Armadillo 5.4 or greater
--Intel Thread Building Blocks 4.2 or greater
--Boost 1.55 or greater
--G++ compiler 4.9 or greater.
-Simply run the make command from within the Release directory to compile GloVe.</p>
+<p>To compile GloVe, you will need the following libraries and compiler installed on your system:</p>
+
+<ul>
+<li>Armadillo 5.4 or greater</li>
+<li>Intel Thread Building Blocks 4.2 or greater</li>
+<li>Boost 1.55 or greater</li>
+<li>G++ compiler 4.9 or greater.
+Simply run the make command from within the Release directory to compile GloVe.</li>
+</ul>
 
 <h3>
 <a id="operation" class="anchor" href="#operation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Operation</h3>
 
-<p>Using GloVe C++ is divided into three stages:
-1.  Building a vocabulary from a corpus of text. 
-2.  Building the co-occurrence matrix from a corpus of text.
-3.  Learning the word vectors from the co-occurrence matrix.</p>
-        </section>
+<p>Using GloVe C++ is divided into three stages:</p>
 
-        <footer>
-          GloveCpp is maintained by <a href="https://github.com/joncox123">joncox123</a><br>
-          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
-
-        
-      </div>
+<ul>
+<li>Building a vocabulary from a corpus of text. </li>
+<li>Building the co-occurrence matrix from a corpus of text.</li>
+<li>Learning the word vectors from the co-occurrence matrix.</li>
+</ul>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/joncox123">joncox123</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
     </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
   </body>
 </html>
